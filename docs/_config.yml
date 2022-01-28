@@ -8,18 +8,15 @@ remote_theme: hydecorp/hydejack@v9.0.5
 ################################################################################################################
 
 lang: #  default language is en I think it as global may be change later translated branch wise
-title: Adobe Commerce Professional Certification - (0711)
-short_title: Adobe Commerce Professional Certification
-description: Adobe Certified Professional Magento Commerce Developer (AD0-E711).
+title: concept book
+short_title: Concept Book
+description: Concept Book
 tagline: “Adobe Commerce Developer Professional Certification (AD0-E711)”.
-url: https://lalittmohan.github.io/adobe-commerce-professional-certification/
+url: https://lalittmohan.github.io/magento2-concept-book/
 baseurl: /
 keywords: [
   'Magento',
   'Magento 2',
-  'certification',
-  'certification course',
-  'certified',
   'Adobe',
   'Adobe commerce',
   'certified',
@@ -38,8 +35,8 @@ author:
 
   ## => GitHub Repository (if the site is hosted by GitHub)
   ##############################
-  repository: lalittmohan/adobe-commerce-professional-certification
-  repository_tree: master
+  repository: lalittmohan/magento2-concept-book
+  repository_tree: main
 
 ## => Markdown Enhancements
 ##############################
@@ -97,10 +94,12 @@ share-links-active:
   
 # Add links to the sidebar
 menu:
-  - title: 01 - Working with Admin
-    url:   /working-with-admin
+  - title: 01 - Admin
+    url:   /admin
   - title: 02 - Architecture
     url:   /architecture
+   - title: Plugins
+     url: / plugins
   - title: 03 - EAV/Database
     url:   /eav-database
   - title: 04 - Layout/UI
