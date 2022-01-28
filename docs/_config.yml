@@ -98,8 +98,6 @@ menu:
     url:   /admin
   - title: 02 - Architecture
     url:   /architecture
-   - title: Plugins
-     url: / plugins
   - title: 03 - EAV/Database
     url:   /eav-database
   - title: 04 - Layout/UI
