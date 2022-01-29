@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Concept Book</title>
+    <link rel="icon" href="_media/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="concept book">
+    <meta name="keywords" content="magento2,certification,concept book,lalit mohan,adobe commerce certification">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+</head>
+
+<body>
+<div id="app">Loading ...</div>
+<script>
+    window.$docsify = {
+        el: '#app',
+        name: 'concept book',
+        repo: 'https://lalittmohan.github.io/magento2-concept-book/',
+        loadSidebar: true,
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md',
+        },
+        subMaxLevel: 4,
+        sidebarDisplayLevel: 1, // set sidebar display level
+        coverpage: true,
+        auto2top: true,
+        relativePath: true,
+        loadNavbar: true,
+        timeUpdater: {
+            text: ">last update time: {docsify-updated}",
+            formatUpdated: "{YYYY}/{MM}/{DD}",
+        },
+        tabs: {
+            persist    : true,      // default
+            sync       : true,      // default
+            theme      : 'classic', // default
+            tabComments: true,      // default
+            tabHeadings: true       // default
+        },
+        pagination: {
+            previousText: 'previous',
+            nextText: 'next',
+            crossChapter: true,
+            crossChapterText: true,
+        },
+        share: {
+            reddit: true,
+            linkedin: true,
+            facebook: true,
+            twitter: true,
+            whatsapp: true,
+            telegram: true,
+        },
+        select: {
+            detectOperatingSystem: {
+                enabled: true,
+                menuId: "operating-system"
+            },
+            sync: false,
+            theme: "classic"
+        },
+        ga: 'UA-XXXXX-Y',
+        search: 'auto', // default
+
+        search : [
+            '/',            // => /README.md
+            '/guide',       // => /guide.md
+            '/get-started', // => /get-started.md
+            '/zh-cn/',      // => /zh-cn/README.md
+        ],
+
+        // complete configuration parameters
+        search: {
+            maxAge: 86400000, // Expiration time, the default one day
+            paths: [], // or 'auto'
+            placeholder: 'Type to search',
+
+            // Localization
+            placeholder: {
+                '/zh-cn/': '搜索',
+                '/': 'Type to search'
+            },
+
+            noData: 'No Results!',
+
+            // Localization
+            noData: {
+                '/zh-cn/': '找不到结果',
+                '/': 'No Results'
+            },
+
+            // Headline depth, 1 - 6
+            depth: 2,
+
+            hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+            // To avoid search index collision
+            // between multiple websites under the same domain
+            namespace: 'website-1',
+
+            // Use different indexes for path prefixes (namespaces).
+            // NOTE: Only works in 'auto' mode.
+            //
+            // When initialiazing an index, we look for the first path from the sidebar.
+            // If it matches the prefix from the list, we switch to the corresponding index.
+            pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+
+            // You can provide a regexp to match prefixes. In this case,
+            // the matching substring will be used to identify the index
+            pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+        },
+        footer: {
+            copy: '<span>Lalit Mohan &copy; 2022</span>',
+            auth: 'by Me',
+            pre: '<hr/>',
+            style: 'text-align: right;',
+            class: 'className',
+        },
+        darkMode: {
+            dark: {
+                background: "",
+                toggleBtnBg: "",
+                textColor: ""
+            },
+            light: {
+                background: "",
+                toggleBtnBg: "",
+                textColor: ""
+            }
+        },
+        changelog : 'CHANGELOG.md', // path of your changelog, it can be remote as well,
+        pseudocode: {
+            indentSize: '1.2em',
+            commentDelimiter: '//',
+            lineNumber: false,
+            lineNumberPunc: ':',
+            noEnd: false,
+            titlePrefix: 'Algorithm'
+        },
+
+    };
+</script>
+<!--<script>
+    const gitalk = new Gitalk({
+        clientID: '2942c5b9c862f2852654',
+        clientSecret: '81fa9d974bfa430c1a9b05cd5c6cf19c33542ef4',
+        repo: 'https://github.com/lalittmohan/lalittmohan.github.io',
+        owner: 'lalit mohan',
+        admin: ['Github repo collaborators, only these guys can initialize github issues'],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+    })
+</script>-->
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+</script>
+<script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="https://unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+<script src="https://unpkg.com/prismjs/components/prism-php.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-select@1"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>-->
+<script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+
+<script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+<script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+
+<script src="//unpkg.com/docsify-slides/dist/docsify-slides.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
+<script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+
+<link
+        rel="stylesheet"
+        href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"
+/>
+<link
+        rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/h-hg/docsify-pseudocode/dist/docsify-pseudocode.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+    }
+  });
+</script>
+</body>
+
+</html>
