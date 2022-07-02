@@ -1,11 +1,17 @@
 
-* About
+* Theme/Design
     * [Resume](/)
-* Blog
-  * [Magento2](/)
-* Contributions
-  * [Magento2 open-source](/)
-  * [Omnichannel Solutions](/)
-  * [Supply Chain Solutions - Block chain](/)
+* Flow
+  * [Shipping](/)
+* Layout
+  * [coming soon](/)
+* Database
+  * [coming soon](/)
+* EAV
+  * [coming soon](/)
+* Service Contracts
+  * [coming soon](/)
+* Admin
+  * [coming soon](/)
   
 * [En](/)
