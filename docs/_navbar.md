@@ -1,6 +1,6 @@
 
 * Theme/Design
-    * [Resume](/)
+    * [coming soon](/)
 * Flow
   * [Shipping](/)
 * Layout
