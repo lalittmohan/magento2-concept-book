@@ -8,7 +8,7 @@
 * Database
   * [coming soon](/)
 * EAV
-  * [coming soon](/)
+  * [Diagram](https://lalittmohan.github.io/magento2-concept-book/#/architecture/db)
 * Service Contracts
   * [coming soon](/)
 * Admin
