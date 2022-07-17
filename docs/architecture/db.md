@@ -144,6 +144,8 @@ flowchart TB
 ```
 <!-- tab:Magento 2.4 -->
 
+<!-- tab:EAV Example -->
+
 ![EAV Example](https://i.stack.imgur.com/U6fYU.png) <span class="tab-badge">New!</span>
 
 <!-- tabs:end -->
