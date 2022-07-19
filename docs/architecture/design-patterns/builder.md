@@ -5,8 +5,6 @@
 - Same contruction process can create different type of object and  representation.
 ![builder](https://refactoring.guru/images/patterns/content/builder/builder-en.png)
 
-## problem
-
 
 #### A typical Builder consists of:
 
@@ -41,8 +39,24 @@ graph TD
   end
 ```
 
+## structure
+
+![structure](https://refactoring.guru/images/patterns/diagrams/builder/structure.png) 
+
+<!-- slide:break -->
+
+# 
+
+I have added:
+
+<!-- slide:break -->
 
 
+
+<!-- panels:start -->
+1.The Builder interface declares product construction steps that are common to all types of builders.
+2.
+<!-- panels:end -->
 ## References
 [Recfactoring](https://refactoring.guru/design-patterns/builder)
 
