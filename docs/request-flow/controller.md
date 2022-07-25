@@ -20,6 +20,7 @@ classI -- classJ : Link(Solid)
 classK ..> classL : Dependency
 classM ..|> classN : Realization
 classO .. classP : Link(Dashed)
+```
 
 <!-- panels:end -->
 
