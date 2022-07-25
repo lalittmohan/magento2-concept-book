@@ -18,9 +18,14 @@ this process increase executing time because need lots of object instantiation e
 Now we use composite pattern to increase performance and execution time by composite object (implementing `ActionInterface`) instead of inheritance (extend  `AbstractAction`)
 
 <!-- tab:frontend -->
+
 ![frontend controller](./frontend-controller.png)
+
 <!-- tab:backend -->
+
 ![frontend controller](./backend-controller.png)
+
+<!-- tab:end -->
 
 <!-- slide:break -->
 ```mermaid
