@@ -3,26 +3,27 @@
 - processs the request with request parameters
 - start rendering process (view)
 - instantiate models (Model)
-- 
+
 ```
 Magento\Catalog\Controller\Product\View
 ```
 
-<!-- panels:start -->
+<!-- slide:break -->
 
 ```mermaid
 classDiagram
-classA --|> classB : Inheritance
-classC --* classD : Composition
-classE --o classF : Aggregation
-classG --> classH : Association
-classI -- classJ : Link(Solid)
-classK ..> classL : Dependency
-classM ..|> classN : Realization
-classO .. classP : Link(Dashed)
+class HttpGetActionInterface {
+  <<interface>>
+  Magento\Framework\App\Action\HttpGetActionInterface
+}
+class controller {
+  OpenSource\ControllerLayer\Controller\Index\Index
+}
+HttpGetActionInterface <|-- controller : implement
+
 ```
 
-<!-- panels:end -->
+<!-- slide:break -->
 
 
 
