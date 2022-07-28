@@ -1,5 +1,6 @@
 <!-- tabs:start -->
-
+|[Indexing](/)| [Caching](/)|[EAV](/)|[Dependency Injection](/)|[Object Manager](/)|[EAV](/)|[interceptor](/)|[plugins](/)|[proxies](/)|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 <!-- tab:Architecture -->
 
 <!-- tab:Backend -->
