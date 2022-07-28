@@ -1,15 +1,17 @@
 <!-- tabs:start -->
 
-<!-- tab:English -->
+<!-- tab:Architecture -->
 
-<!-- tab:French -->
+<!-- tab:Backend -->
 
 Bonjour!
 
-<!-- tab:Italian -->
+<!-- tab:Frontend -->
 
-dgfhg <span class="tab-badge">New!</span>
-
+<!-- tab:GraphQL -->
+<!-- tab:PWA -->
+<!-- tab:Headless -->
+<!-- tab:Grpc/Microservices -->
 <!-- tabs:end -->
 
 
