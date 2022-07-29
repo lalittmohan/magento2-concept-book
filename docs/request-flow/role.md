@@ -1,6 +1,3 @@
-> **Note** 
-> Roles Flow
-
 ```mermaid
 flowchart LR
     subgraph Delete
@@ -18,9 +15,7 @@ flowchart LR
     deleteWithOutError-->|An error occurred while deleting this role| redirectEditPage
     redirectEditPage[Redirect to Edit Page]
     ==>stopDelete[STOP]
-    
     end
-    
     subgraph SaveRole
     direction TB
     start[START]
@@ -50,7 +45,6 @@ flowchart LR
     ==>rulesFactory[create rulesFactory object AND setRoleId setResources AND save]
     ==>stop[STOP]
     end
-    
     subgraph Add/Edit
     direction TB
     add[START]
