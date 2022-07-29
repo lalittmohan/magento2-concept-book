@@ -1,4 +1,4 @@
->**Notes** 
+> **Note** 
 > Roles Flow
 
 ```mermaid
@@ -6,7 +6,20 @@
 flowchart LR
     subgraph Delete
     direction TB
-    c1-->c2
+    delete[START]
+    ==>redirect[create result object using resultFactory type `redirect`]
+    ==>getRoleId[get role id from request]
+    ==>currentUser[get current user from session]
+    ==>sameRoles{req delete for role exist in cureent user roles array}-->|cannot delete self-assigned roles |redirectEditPage
+    currentUser
+    ==>_initRoledel[nitialize role model by passed parameter in request]
+    ==>roleCheck{role not exist}-->|We can not find a role to delete| redirectEditPage
+    _initRoledel
+    ==>deleteWithOutError{delte sucessfully}--> |You deleted the role | redirectEditPage
+    deleteWithOutError-->|An error occurred while deleting this role| redirectEditPage
+    redirectEditPage[Redirect to Edit Page]
+    ==>stopDelete[STOP]
+    
     end
     
     subgraph SaveRole
