@@ -19,7 +19,7 @@
         el: '#app',
         name: 'concept book',
         repo: 'https://lalittmohan.github.io/magento2-concept-book/',
-        loadSidebar: true,
+        loadSidebar: false,
         alias: {
             '/.*/_sidebar.md': '/_sidebar.md',
         },
@@ -28,7 +28,7 @@
         coverpage: true,
         auto2top: true,
         relativePath: true,
-        loadNavbar: true,
+        loadNavbar: false,
         timeUpdater: {
             text: ">last update time: {docsify-updated}",
             formatUpdated: "{YYYY}/{MM}/{DD}",
@@ -109,7 +109,7 @@
         },
         footer: {
             copy: '<span>Open Source &copy; 2022</span>',
-            auth: 'Love from Magento Community',
+            auth: '<3 from Magento Community',
             pre: '<hr/>',
             style: 'text-align: right;',
             class: 'className',
@@ -126,22 +126,7 @@
                 textColor: ""
             }
         },
-        changelog : 'CHANGELOG.md', // path of your changelog, it can be remote as well,
-        pseudocode: {
-            indentSize: '1.2em',
-            commentDelimiter: '//',
-            lineNumber: false,
-            lineNumberPunc: ':',
-            noEnd: false,
-            titlePrefix: 'Algorithm'
-        },
-
     };
-</script>
-<script>
-    mermaid.initialize({
-        startOnLoad: true
-    });
 </script>
 <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
 <script src="https://unpkg.com/prismjs/components/prism-php.min.js"></script>
@@ -164,11 +149,14 @@
 <script src="//unpkg.com/docsify-slides/dist/docsify-slides.min.js"></script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
 <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"/>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/index.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">
-<script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+    <script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+</script>
 </body>
 
 </html>
