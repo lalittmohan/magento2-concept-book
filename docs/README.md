@@ -18,6 +18,8 @@
 
 <!-- tabs:start -->
 <!-- tab:ACL -->
+|[add role](/)|[edit role](/)|[save role](/)|[delete role](/)|
+| --- | --- | --- | --- |
 <!-- tab:PRODUCT -->
 <!-- tab:ORDER -->
 <!-- tab:CUSTOMER -->
@@ -34,15 +36,6 @@
 <!-- tab:PWA -->
 <!-- tab:Headless -->
 <!-- tab:Grpc|Microservices -->
-<!-- tabs:end -->
-
-**Devops**
-
-<!-- tabs:start -->
-<!-- tab:Docker -->
-<!-- tab:Kubernet -->
-<!-- tab:CI|CD -->
-<!-- tab:Deployment -->
 <!-- tabs:end -->
 
 
