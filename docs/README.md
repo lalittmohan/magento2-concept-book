@@ -1,3 +1,4 @@
+**Concepts**
 
 <!-- tabs:start -->
 <!-- tab:Architecture -->
@@ -13,25 +14,34 @@
 <!-- tabs:end -->
 
 
-## code flow
+**code flow**
+
 <!-- tabs:start -->
-<!-- tab:role -->
-<!-- tab:order -->
-<!-- tab:customer -->
+<!-- tab:ACL -->
+<!-- tab:PRODUCT -->
+<!-- tab:ORDER -->
+<!-- tab:CUSTOMER -->
+<!-- tab:INVENTORY -->
+<!-- tab:PRICING -->
+<!-- tab:PAYMENT -->
+<!-- tab:SHIPPING -->
+<!-- tab:SYSTEM -->
 <!-- tabs:end -->
 
-## Trends
+**Trends**
+
 <!-- tabs:start -->
 <!-- tab:PWA -->
 <!-- tab:Headless -->
 <!-- tab:Grpc|Microservices -->
 <!-- tabs:end -->
 
-## Devops
+**Devops**
+
 <!-- tabs:start -->
 <!-- tab:Docker -->
 <!-- tab:Kubernet -->
-<!-- tab:CI/CD -->
+<!-- tab:CI|CD -->
 <!-- tab:Deployment -->
 <!-- tabs:end -->
 
