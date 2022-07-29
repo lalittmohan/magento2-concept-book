@@ -2,28 +2,59 @@
 > Roles Flow
 
 ```mermaid
-flowchart TB
+%%{init: {'theme':'base'}}%%
+flowchart LR
     subgraph Delete
     direction TB
     c1-->c2
     end
-    subgraph Save
-    b1-->b2
+    
+    subgraph SaveRole
+    direction TB
+    start[START]
+    ==>$resultRedirect[create result object using resultFactory type `redirect`]
+    ==>$rid[get role id from request]
+    ==>$resource[get resource from request]
+    ==>$oldRoleUsers[get old role user from request `in_role_user_old`]
+    ==>$roleUsers[get get role user from request `in_role_user`]
+    -->$isAll[get isAll from request]
+    -->IsALL{allow all resource}
+    -->|re-assign root resource id instead of `resource id from request` | resource[rootResourceId from \Magento\Framework\Acl\RootResource using object manager]-->$resource
+    $isAll==>$role[Initialize role model by passed parameter`role_id` in request]
+    -->role{role not exist}-->stop[STOP]
+    $role
+    ==>validateUser[Validate current user password]
+    ==>$roleName[get role name by removeTags from request rolename]
+    $roleName
+    ==>setdata[setName setPid  setRoleType setUserType ]
+    ==>dispatch[dispatch event `admin_permissions_role_prepare_save` object`role` request]
+    ==>processPreviousUsers[delete old user from roles]
+    $oldRoleUsers-. pass old role user  .->processPreviousUsers 
+    processPreviousUsers-->processCurrentUsers[Processes users to be assigned to roles]
+    $roleUsers-. pass role user  .->processCurrentUsers
+    $resource-. pass resource  .->rulesFactory
+    processCurrentUsers
+    ==>save[role save]
+    ==>rulesFactory[create rulesFactory object AND setRoleId setResources AND save]
+    ==>stop[STOP]
     end
+    
     subgraph Add/Edit
     direction TB
-    a1[routing to controller execute method]-->a2[restore resource form data from session & save one in registry]
-    a2-->a3[restore user form data from session and save one in registry]
-    a3-->a4[initize role model by passed parameter in request]
-    a4-->a5[restore general information form data from session and save one in registry]
-    a5-->a6[preparing layout from output]
-    a6-->a7{check role id ?}
-    a4-. get id from role object .-> a7
-    a7-->|exist| a8[add breadcrumb & title to edit role]
-    a7-->|not exist| a9[add breadcrumb& title to add new role]
-    a8 & a9-->a10[get block named adminhtml.user.role.buttons]-->a11[set role id role info]
-    a11-->a12[render layout]
-    click a2 "https://github.com" "Magento\User\Controller\Adminhtml\User\Role\EditRole" _blank
+    add[START]
+    ==>restoreResourcesDataFromSession[restore resource form data from session & save one in registry]
+    ==>restoreUsersDataFromSession[restore user form data from session and save one in registry]
+    ==>_initRole[initize role model by passed parameter in request]
+    ==>_initAction[restore general information form data from session and save one in registry]
+    ==>roleId{role exist ?}
+    _initRole-. get id from role object .-> roleId
+    roleId-->|exist| editRole[add breadcrumb & title to edit role]
+    roleId-->|not exist| addRole[add breadcrumb& title to add new role]
+    editRole & addRole
+    ==>block[get block named adminhtml.user.role.buttons]
+    ==>setRole[set role id role info]
+    ==>renderLayout[render layout]
+    ==>z[STOP]
     end
     
 ```
