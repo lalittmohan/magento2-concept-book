@@ -2,7 +2,6 @@
 > Roles Flow
 
 ```mermaid
-%%{init: {'theme':'base'}}%%
 flowchart LR
     subgraph Delete
     direction TB
