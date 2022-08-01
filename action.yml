@@ -1,6 +1,6 @@
 name: 'Generate Plantuml'
 description: 'Generate uml diagrams with Plantuml Server and push them to your repository.'
-author: 'grassedge'
+author: 'lalittmohan'
 inputs:
   path:
     description: 'path to directory which generated svg is stored'

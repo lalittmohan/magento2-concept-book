@@ -18,7 +18,7 @@
     "node",
     "plantuml"
   ],
-  "author": "grassedge",
+  "author": "lalittmohan",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
