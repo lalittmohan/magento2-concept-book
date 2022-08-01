@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Concept Book</title>
-    <link rel="icon" href="_media/favicon.ico">
+    <title>Magento2 PlayBook</title>
+    <link rel="icon" href="_media/m2remote-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Magento internal code flow & functionality in business prospectives">
     <meta name="keywords" content="magento2,certification,concept book,lalit mohan,adobe commerce certification">
@@ -17,7 +17,7 @@
 <script>
     window.$docsify = {
         el: '#app',
-        name: 'concept book',
+        name: 'Magento2 Playbook',
         repo: 'https://lalittmohan.github.io/magento2-concept-book/',
         loadSidebar: true,
         alias: {
@@ -54,14 +54,14 @@
             whatsapp: true,
             telegram: true,
         },
-        select: {
+        /*select: {
             detectOperatingSystem: {
                 enabled: true,
                 menuId: "operating-system"
             },
             sync: false,
             theme: "base"
-        },
+        },*/
         ga: 'G-3HVR4W4P6G',
         search: 'auto', // default
 
@@ -88,28 +88,30 @@
             },
 
             // Headline depth, 1 - 6
-            depth: 2,
+            depth: 4,
 
-            hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+            hideOtherSidebarContent: true, // whether or not to hide other sidebar content
 
             // To avoid search index collision
             // between multiple websites under the same domain
-            namespace: 'website-1',
+            namespace: 'playbook-en',
 
             // Use different indexes for path prefixes (namespaces).
             // NOTE: Only works in 'auto' mode.
             //
             // When initialiazing an index, we look for the first path from the sidebar.
             // If it matches the prefix from the list, we switch to the corresponding index.
-            pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+           // pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+            pathNamespaces: [],
 
             // You can provide a regexp to match prefixes. In this case,
             // the matching substring will be used to identify the index
-            pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+            //pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+
         },
         footer: {
-            copy: '<span>Open Source &copy; 2022</span>',
-            auth: '<3 from Magento Community',
+            copy: '<span>M2Remote &copy; 2022</span>',
+            auth: 'Magento2 Community',
             pre: '<hr/>',
             style: 'text-align: right;',
             class: 'className',
