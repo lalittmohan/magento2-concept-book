@@ -1,6 +1,6 @@
 # Concept Book For Magento2
 
-https://github.com/lalittmohan/magento2-concept-book
+use [plantUML](https://plantuml.com/) and [mermaid](https://mermaid-js.github.io/mermaid/#/n00b-gettingStarted) for syntax
 
 #### locally Setup
 

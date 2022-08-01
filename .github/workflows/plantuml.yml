@@ -14,7 +14,7 @@ jobs:
         id: plantuml
         uses: lalittmohan/magento2-concept-book@main
         with:
-          path: example
+          path: docs
           message: "Render PlantUML files"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
