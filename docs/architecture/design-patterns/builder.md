@@ -69,6 +69,8 @@ graph TD
 - The construction result can be obtained directly from the director only if all products follow the same interface. Otherwise, the client should fetch the result from the builder.
 
 
+[code example](https://designpatternsphp.readthedocs.io/en/latest/Creational/Builder/README.html)
+
 ## Generic Example
 
 ![example](https://sourcemaking.com/files/v2/content/patterns/Builder_example1.png)
