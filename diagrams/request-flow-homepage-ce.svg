@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="545px" preserveAspectRatio="none" style="width:1102px;height:545px;background:#FFFFFF;" version="1.1" viewBox="0 0 1102 545" width="1102px" zoomAndPan="magnify"><defs/><g><ellipse cx="701" cy="16" fill="#222222" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><g id="Bootstrap"><rect fill="#F1F1F1" height="52.5938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="182" x="610" y="95"/><line style="stroke:#181818;stroke-width:0.5;" x1="610" x2="792" y1="121.2969" y2="121.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="664.5" y="112.9951">Bootstrap</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="615" y="139.292">::create(BP,$_SERVER)</text></g><g id="Application"><rect fill="#F1F1F1" height="52.5938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="284" x="559" y="263.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="559" x2="843" y1="289.7969" y2="289.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="659.5" y="281.4951">Application</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="564" y="307.792">bootstrap-&gt;createApplication(Http)</text></g><g id="elem_GMN1150111"><path d="M827,86 L827,117.5 L792.152,121.5 L827,125.5 L827,156.5313 A0,0 0 0 0 827,156.5313 L1095,156.5313 A0,0 0 0 0 1095,156.5313 L1095,96 L1085,86 L827,86 A0,0 0 0 0 827,86 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1085,86 L1085,96 L1095,96 L1085,86 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="240" x="833" y="103.0669">Bootstrap Magento Application</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="247" x="833" y="118.1997">Static method so that client code does</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="223" x="833" y="133.3325">not have to create Object Manager</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="243" x="833" y="148.4653">Factory every time Bootstrap is called</text></g><g id="elem_GMN1150114"><path d="M6,217 L6,363.1953 A0,0 0 0 0 6,363.1953 L524,363.1953 A0,0 0 0 0 524,363.1953 L524,294 L558.812,290 L524,286 L524,227 L514,217 L6,217 A0,0 0 0 0 6,217 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M514,217 L514,227 L524,227 L514,217 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="211" x="12" y="234.0669">Create Application Instance</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="237" x="12" y="249.1997">\Magento\Framework\App\Http::class</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="12" y="264.3325"> </text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="318" x="12" y="279.4653">Factory method for creating application instances</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="287" x="12" y="294.5981">1.Create new instance using object manager</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="206" x="303" y="294.5981">create($type, $arguments)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="351" x="36" y="309.731">-&gt;factory create instance,Retrieve preference for type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="12" y="324.8638">      </text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="452" x="36" y="324.8638">create($this-&gt;_config-&gt;getPreference($type), $arguments)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="367" x="16" y="339.9966">2.try check instance type should implement AppInterface</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="16" y="355.1294">otherwise terminate()</text></g><g id="Run"><rect fill="#F1F1F1" height="52.5938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="179" x="611.5" y="454.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="611.5" x2="790.5" y1="480.7969" y2="480.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="687.5" y="472.4951">Run</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="616.5" y="498.792">bootstrap-&gt;run($app)</text></g><g id="elem_GMN1150119"><path d="M162,423 L162,538.9297 A0,0 0 0 0 162,538.9297 L576,538.9297 A0,0 0 0 0 576,538.9297 L576,485 L611.283,481 L576,477 L576,433 L566,423 L162,423 A0,0 0 0 0 162,423 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M566,423 L566,433 L576,433 L566,423 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="147" x="168" y="440.0669">Runs an application</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="188" x="168" y="455.1997">- Sets a custom error handler</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="135" x="361" y="455.1997">initErrorHandler()</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="168" y="470.3325">- Asserts maintenance mode</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="157" x="359" y="470.3325">assertMaintenance()</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="258" x="168" y="485.4653">- Asserts whether application is installed</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="126" x="435" y="485.4653">assertInstalled()</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="195" x="168" y="500.5981">- Launch application ,Http,cron</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="168" x="372" y="500.5981">$application-&gt;launch()</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159" x="168" y="515.731">- Send response to client</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="119" x="332" y="515.731">sendResponse()</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="168" y="530.8638"> </text></g><!--MD5=[2f58f0812bcec7e915ae33275a19ca1e]
+link *start to Bootstrap--><g id="link_*start_Bootstrap"><path d="M701,26.185 C701,40.292 701,67.938 701,89.668 " fill="none" id="*start-to-Bootstrap" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="701,94.77,705,85.77,701,89.77,697,85.77,701,94.77" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d7d6b097aaaf323d58f911e03d6ab862]
+link Bootstrap to Application--><g id="link_Bootstrap_Application"><path d="M701,148.151 C701,177.728 701,226.331 701,258.001 " fill="none" id="Bootstrap-to-Application" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="701,263.32,705,254.32,701,258.32,697,254.32,701,263.32" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[262f1ab65b6677d9d77b04908120768d]
+link Application to Run--><g id="link_Application_Run"><path d="M701,316.883 C701,351.38 701,412.344 701,449.1761 " fill="none" id="Application-to-Run" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="701,454.4292,705,445.4292,701,449.4292,697,445.4292,701,454.4292" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[99eab3192ac9b126e8d465b9a0ed4e3b]
+@startuml
+[*] - -> Bootstrap
+
+Bootstrap - -> Application
+Bootstrap : ::create(BP,$_SERVER)
+
+note right of Bootstrap
+<b>Bootstrap Magento Application
+Static method so that client code does
+not have to create Object Manager
+Factory every time Bootstrap is called
+end note
+
+Application : bootstrap->createApplication(Http)
+note left of Application
+<b>Create Application Instance
+\Magento\Framework\App\Http::class
+
+<U>Factory method for creating application instances
+1.Create new instance using object manager <b>create($type, $arguments)
+      ->factory create instance,Retrieve preference for type
+      <b>create($this->_config->getPreference($type), $arguments)
+ 2.try check instance type should implement AppInterface
+ otherwise terminate()
+end note
+
+Application - -> Run
+Run : bootstrap->run($app)
+note left of Run
+<b>Runs an application
+- Sets a custom error handler<b> initErrorHandler()
+- Asserts maintenance mode<b> assertMaintenance()
+- Asserts whether application is installed <b> assertInstalled()
+- Launch application ,Http,cron <b> $application->launch()
+- Send response to client<b> sendResponse()
+
+end note
+@enduml
+
+PlantUML version 1.2022.7beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
