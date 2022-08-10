@@ -1,0 +1,40 @@
+@startuml
+
+[*] --> Bootstrap
+
+Bootstrap --> Application
+Bootstrap : ::create(BP,$_SERVER)
+
+note right of Bootstrap
+<b>Bootstrap Magento Application
+Static method so that client code does
+not have to create Object Manager
+Factory every time Bootstrap is called
+end note
+
+Application : bootstrap->createApplication(Http)
+note left of Application
+<b>Create Application Instance
+\Magento\Framework\App\Http::class
+
+<U>Factory method for creating application instances
+1.Create new instance using object manager <b>create($type, $arguments)
+      ->factory create instance,Retrieve preference for type
+      <b>create($this->_config->getPreference($type), $arguments)
+ 2.try check instance type should implement AppInterface
+ otherwise terminate()
+end note
+
+Application --> Run
+Run : bootstrap->run($app)
+note left of Run
+<b>Runs an application
+- Sets a custom error handler<b> initErrorHandler()
+- Asserts maintenance mode<b> assertMaintenance()
+- Asserts whether application is installed <b> assertInstalled()
+- Launch application ,Http,cron <b> $application->launch()
+- Send response to client<b> sendResponse()
+
+end note
+
+@enduml
