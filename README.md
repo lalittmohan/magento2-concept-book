@@ -1,6 +1,7 @@
 # Concept Book For Magento2
 
-use [plantUML](https://plantuml.com/) and [mermaid](https://mermaid-js.github.io/mermaid/#/n00b-gettingStarted) for syntax
+use [plantUML](https://plantuml.com/) and [mermaid](https://mermaid-js.github.io/mermaid/#/n00b-gettingStarted) for Diagrams
+use Markdown format for content.
 
 #### locally Setup
 
