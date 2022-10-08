@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="413px" preserveAspectRatio="none" style="width:814px;height:413px;background:#FFFFFF;" version="1.1" viewBox="0 0 814 413" width="814px" zoomAndPan="magnify"><defs/><g><g id="EntryPoint_Application_StaticResource"><rect fill="#F1F1F1" height="78.2031" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="447" x="113.5" y="7"/><line style="stroke:#181818;stroke-width:0.5;" x1="113.5" x2="560.5" y1="33.2969" y2="33.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="283" x="195.5" y="24.9951">EntryPoint_Application_StaticResource</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="250" x="118.5" y="49.4355">\Magento\Framework\App\StaticResource</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="427" x="118.5" y="63.4043">Retrieving static resources (for example, CSS, JavaScript, and images)</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="426" x="118.5" y="77.373">It's not used in production mode, expected resources from pub/static.</text></g><ellipse cx="68" cy="46" fill="#222222" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><g id="Developer"><rect fill="#F1F1F1" height="50.2656" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="122" x="7" y="170.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="7" x2="129" y1="196.7969" y2="196.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="30.5" y="188.4951">Developer</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="102" x="12" y="212.9355">Developer Mode</text></g><g id="Default"><rect fill="#F1F1F1" height="50.2656" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="100" x="18" y="331.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="18" x2="118" y1="357.7969" y2="357.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="41.5" y="349.4951">Default</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="23" y="373.9355">Default Mode</text></g><g id="elem_GMN8"><path d="M164,145 L164,191.5 L129.242,195.5 L164,199.5 L164,245.7969 A0,0 0 0 0 164,245.7969 L776,245.7969 A0,0 0 0 0 776,245.7969 L776,155 L766,145 L164,145 A0,0 0 0 0 164,145 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M766,145 L766,155 L776,155 L766,145 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="509" x="170" y="162.0669">Request for a non-existent static resource is redirected to the static entry point</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="170" y="177.1997">as per rewrite rules in .htaccess.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="591" x="170" y="192.3325">parses the requested URL based on retrieved parameters and finds the requested resource.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="170" y="207.4653"> </text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="507" x="170" y="222.5981">the content of the file is returned so that every time the resource is requested,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="217" x="170" y="237.731">the returned content is up to date</text></g><g id="elem_GMN11"><path d="M153,306 L153,352.5 L118.293,356.5 L153,360.5 L153,406.7969 A0,0 0 0 0 153,406.7969 L807,406.7969 A0,0 0 0 0 807,406.7969 L807,316 L797,306 L153,306 A0,0 0 0 0 153,306 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M797,306 L797,316 L807,316 L797,306 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="554" x="159" y="323.0669">the retrieved resource is published so it is accessible by the previously requested URL.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="159" y="338.1997"> </text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="607" x="159" y="353.3325">All future requests for the static resource are processed by the server the same as static files;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="633" x="159" y="368.4653">without involving the entry point. If it is necessary to synchronize published files with original ones,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="357" x="159" y="383.5981">the pub/static directory should be removed; as a result,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="366" x="163" y="398.731">files are automatically republished with the next request.</text></g><!--MD5=[86f65d8f15a9266ac7f292253efc3088]
+link *start to Developer--><g id="link_*start_Developer"><path d="M68,56.227 C68,77.599 68,131.252 68,165.093 " fill="none" id="*start-to-Developer" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="68,170.346,72,161.346,68,165.346,64,161.346,68,170.346" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[53f53432f2622d43b16e3050506d5d25]
+link Developer to Default--><g id="link_Developer_Default"><path d="M68,220.649 C68,248.981 68,295.934 68,326.2901 " fill="none" id="Developer-to-Default" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="68,331.3851,72,322.3851,68,326.3851,64,322.3851,68,331.3851" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5084faf87e6e6e3c2dba1ef521baa2ba]
+@startuml
+EntryPoint_Application_StaticResource: \Magento\Framework\App\StaticResource
+EntryPoint_Application_StaticResource: Retrieving static resources (for example, CSS, JavaScript, and images)
+EntryPoint_Application_StaticResource: It's not used in production mode, expected resources from pub/static.
+
+[*] - -> Developer
+Developer: Developer Mode
+Developer - -> Default
+Default: Default Mode
+
+note right of Developer
+Request for a non-existent static resource is redirected to the static entry point
+as per rewrite rules in .htaccess.
+parses the requested URL based on retrieved parameters and finds the requested resource.
+
+the content of the file is returned so that every time the resource is requested,
+the returned content is up to date
+end note
+
+note right of Default
+the retrieved resource is published so it is accessible by the previously requested URL.
+
+All future requests for the static resource are processed by the server the same as static files;
+without involving the entry point. If it is necessary to synchronize published files with original ones,
+the pub/static directory should be removed; as a result,
+ files are automatically republished with the next request.
+end note
+@enduml
+
+PlantUML version 1.2022.10beta1(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
