@@ -1,0 +1,29 @@
+@startuml
+EntryPoint_Application_StaticResource: \Magento\Framework\App\StaticResource
+EntryPoint_Application_StaticResource: Retrieving static resources (for example, CSS, JavaScript, and images)
+EntryPoint_Application_StaticResource: It's not used in production mode, expected resources from pub/static.
+
+[*] --> Developer
+Developer: Developer Mode
+Developer --> Default
+Default: Default Mode
+
+note right of Developer
+Request for a non-existent static resource is redirected to the static entry point
+as per rewrite rules in .htaccess.
+parses the requested URL based on retrieved parameters and finds the requested resource.
+
+the content of the file is returned so that every time the resource is requested,
+the returned content is up to date
+end note
+
+note right of Default
+the retrieved resource is published so it is accessible by the previously requested URL.
+
+All future requests for the static resource are processed by the server the same as static files;
+without involving the entry point. If it is necessary to synchronize published files with original ones,
+the pub/static directory should be removed; as a result,
+ files are automatically republished with the next request.
+end note
+
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+EntryPoint_Application_Http: \Magento\Framework\App\Http
+
+[*] --> Http
+Http --> routing
+routing --> ControllerAction
+ControllerAction --> errorHandling
+
+note right of Http
+Determines the <b>application area
+- <b>Admin</b> (adminhtml) entry point for this area is pub/index.php
+  {includes the code needed for store management}
+- <b>Storefront</b> (frontend) entry point for this area is pub/index.php.
+  {contains template and layout files that define the appearance}.
+- <b>Basic</b> (base): used as a fallback for files absent in adminhtml and frontend areas.
+- <b>Cron</b> (crontab): In pub/cron.php,
+  the \Magento\Framework\App\Cron class always loads the 'crontab' area.
+- <b>Web API REST</b> (webapi_rest)
+- <b>GraphQL</b> (graphql)
+- <b>Web API SOAP</b> (webapi_soap)
+end note
+
+note right of routing
+Starts the front controller and routing systems in order to find and execute a controller action
+end note
+
+note right of ControllerAction
+Uses an HTTP response object to return result obtained from the controller action.
+end note
+
+note right of errorHandling
+If (developer mode):
+    If the Commerce application is not installed, redirect to Setup Wizard.
+    If the Commerce application is installed, display an error and HTTP status code 500 (Internal Server Error)
+If (maintenance mode):
+    display a user-friendly “Service Unavailable” landing page with HTTP status code 503 (Service Unavailable).
+If (not installed)
+    redirect to Setup Wizard.
+If (session is invalid)
+    redirect to the home page.
+If (initialization error)
+    display a user-friendly “Page Not Found” page with HTTP status code 404 (Not Found).
+other error
+     display a user-friendly “Service Unavailable” page with HTTP response 503
+     generate an error report and display its ID on the page.
+
+
+end note
+
+@enduml

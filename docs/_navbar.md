@@ -1,12 +1,15 @@
 * Architecture
-    * [Dsign Patterns](/)
-    * [Desing Principals](/)
-    * [porto /Hexagonal architecture](/)
-* Theme/Design
-    * [Layout](/)
-    * [UI Component](/)
-    * [theme](/)
-* Flow
+  * [Dsign Patterns](/)
+  * [Desing Principals](/)
+  * [porto /Hexagonal architecture](/)
+* Frontend
+  * [Layout](/)
+  * [UI Component](/)
+  * [theme](/)
+* Backend
+  * [grid](/)
+  * [forms](/)
+* Code Flow
   * [catalog](/)
   * [Shipping](/)
   * [ACL](/)
@@ -17,8 +20,4 @@
   * [attributes](/)
 * Service Contracts
   * [coming soon](/)
-* Admin
-  * [grid](/)
-  * [forms](/)
-  
 * [En](/)
