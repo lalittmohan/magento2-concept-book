@@ -2,7 +2,7 @@
 
 <!-- tabs:start -->
 <!-- tab:Architecture -->
-|[Indexing](/)| [Caching](/)|[EAV](/)|[Dependency Injection](/)|[Object Manager](/)|[Declarative schemas ](/)|[interceptor](/)|[plugins](/)|[proxies](/)|[extension attributes](/extension-attributes)
+|[Indexing](/)| [Caching](/)|[EAV](/)|[Dependency Injection](/)|[Object Manager](/)|[Declarative schemas ](/)|[interceptor](/)|[plugins](/)|[proxies](/)|[extension attributes](/architecture/extension-attributes)
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 <!-- tab:Backend -->
