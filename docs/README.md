@@ -2,8 +2,8 @@
 
 <!-- tabs:start -->
 <!-- tab:Architecture -->
-|[Indexing](/)| [Caching](/)|[EAV](/)|[Dependency Injection](/)|[Object Manager](/)|[Declarative schemas ](/)|[interceptor](/)|[plugins](/)|[proxies](/)|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|[Indexing](/)| [Caching](/)|[EAV](/)|[Dependency Injection](/)|[Object Manager](/)|[Declarative schemas ](/)|[interceptor](/)|[plugins](/)|[proxies](/)|[extension attributes](/extension-attributes)
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 <!-- tab:Backend -->
 <!-- tab:Frontend -->
